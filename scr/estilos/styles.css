@@ -6,3 +6,18 @@
   font-weight: weight;
   font-style: normal;
 }
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+}
+
+footer{
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
