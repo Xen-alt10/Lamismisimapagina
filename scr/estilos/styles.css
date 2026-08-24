@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis0.0..com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 *{
   font-family: "Comfortaa", sans-serif;
@@ -7,9 +7,21 @@
   font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(20, 20, 20);
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
@@ -20,4 +32,8 @@ footer{
 a{
     text-decoration: none;
     color: black;
+}
+
+main{
+    flex:20cm
 }
