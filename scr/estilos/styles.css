@@ -6,7 +6,32 @@
   font-weight: weight;
   font-style: normal;
 }
+header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 100px;
+    background: #0a3d62;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100; 
+}
+.header .logo{
+    font-size: 1.8em;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-button{
+    font-size: 1.2em;
+    margin-right: 10px;
+    border: none;
+    
 
+}
 html{
     scroll-behavior: smooth;
 }
