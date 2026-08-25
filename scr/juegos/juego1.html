@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 1</title>
+</head>         
+<body>
+    <h1>Ejercicio 1</h1>
+    <h2>Nivel 1</h2>
+    <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
+
+    <p>X / 5 = 125</p>
+    <p id="nivel-1" ></p>
+    <button id="posres1" type="button" onclick="incorrecto() ">X = 5</button>
+    <button id="posres2" type="button" onclick="correcto()">X = 625</button>
+    <button id="posres3" type="button" onclick="incorrecto()">X = 500</button>
+    <br>
+    <br>
+    <button type="button" onclick="resolver1()">resolver</button>
+    <script>
+        const posres1= document.getElementById('posres1');
+        const posres2= document.getElementById('posres2');
+        const posres3= document.getElementById('posres3');
+
+        function resolver1(){
+        document.getElementById("nivel-1").innerHTML = 'X = 625'
+
+        }
+        function incorrecto(){
+        document.getElementById("nivel-1").innerHTML = '<p style="color: red;"> RESPUESTA INCORRECTA LA PUTA QUE TE PARIO ';
+           posres1.disabled = true;
+           posres2.disabled = true;
+           posres3.disabled = true;
+
+        }    
+        function correcto(){
+        document.getElementById("nivel-1").innerHTML = '<p style="color: green;"> RESPUESTA CORRECTA LA PUTA QUE TE PARIO ';
+           posres1.disabled = true;
+           posres2.disabled = true;
+           posres3.disabled = true;
+        } 
+
+    </script>    
+</body>
+</html>
+ 
