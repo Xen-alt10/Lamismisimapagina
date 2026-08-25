@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="/scr/estilos/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title> Quizz </title>
 </head>
@@ -11,42 +11,30 @@
     <header class="header">
         <section id="home">
         <h1> lamismisimapagina </h1>
-        <nav>
-            <ul>
-                 <button class="nav-button"><a href="#home"><i class="fa-solid fa-house"></i> Inicio</a></button>
-                 <button class="nav-button"><a href="#about"><i class="fa-solid fa-info-circle"></i> Acerca de</a></button>
-                 <button class="nav-button"><a href="#games"><i class="fa-solid fa-gamepad"></i> Juegos</a></button>
-                 <button class="nav-button"><a href="#contact"><i class="fa-solid fa-envelope"></i> Contacto</a></button>    
-            </ul>
+        <nav class="nav">
+            <a href="#home"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="recompensas.html"><i class="fa-solid fa-info-circle"></i> recompensas</a>
+            <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> historial de ejercicios</a>
+            <a href="cuenta.html"><i class="fa-solid fa-gamepad"></i> cuenta</a>
         </nav>
         </section>
     </header>
     <main>
-        <section id="about">
-            <h2> Acerca de </h2>
-            <p> Info nuestra y la pagina web </p>
-        </section>
-        <section id="games">
-            <h2> Juegos </h2>
-            <p> Quizzes sobre temas logicos </p>
-            <div class="games-contenedor">
-                <div class="game">
-                    <a href="/scr/juegos/juego1.html"><img src="imagenes/juego1.jpg" alt="Juego 1"></a>
-                    <h3> Juego 1 </h3>
-                    <p> Descripción del juego 1. </p>
-                </div>
-                <div class="game">
-                    <a href="/scr/juegos/juego2.html"><img src="imagenes/juego2.jpg" alt="Juego 2"></a>
-                    <h3> Juego 2 </h3>
-                    <p> Descripción del juego 2. </p>
-                </div>
-                <div class="game">
-                    <a href="/scr/juegos/juego3.html"><img src="imagenes/juego3.jpg" alt="Juego 3"></a>
-                    <h3> Juego 3 </h3>
-                    <p> Descripción del juego 3. </p>
-                </div>
-            </div>
-        </section>
+        <h1>¿Que estas aprendiendo ahora?</h1>
+        <h1>Materia:</h1>
+        <button id="materia">Matematica</button>
+        <button id="materia"> Fisica</button> 
+        <button id="materia">programacion</button>
+
+        <h2>Nivel</h2>
+        <button class="nivel-seleccion">Basico</button>
+        <button class="nivel-seleccion">Intermedio</button> 
+        <button class="nivel-seleccion">Avanzado</button>
+        <h1>empieza</h1>
+
+       <button class="nivel">LVL1</button>
+        <button class="nivel">LVL2</button>
+         <button class="nivel">LVL3</button>
     </main>
     <footer class="pagefooter">
         <section id="contact">                                               
