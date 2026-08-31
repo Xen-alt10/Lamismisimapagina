@@ -22,19 +22,20 @@
     <main>
         <h1>¿Que estas aprendiendo ahora?</h1>
         <h1>Materia:</h1>
-        <button id="materia">Matematica</button>
-        <button id="materia"> Fisica</button> 
-        <button id="materia">programacion</button>
+        <button class="btnm" onclick="activar(this)">matematica</button>
+        <button class="btnm" onclick="activar(this)">fisica</button>
+        <button class="btnm" onclick="activar(this)">programacion</button>
 
         <h2>Nivel</h2>
-        <button class="nivel-seleccion">Basico</button>
-        <button class="nivel-seleccion">Intermedio</button> 
-        <button class="nivel-seleccion">Avanzado</button>
+        <button class="btns" onclick="activar2(this)">Basico</button>
+        <button class="btns" onclick="activar2(this)">Intermedio</button> 
+        <button class="btns" onclick="activar2(this)">Avanzado</button>
         <h1>empieza</h1>
 
        <button class="nivel">LVL1</button>
         <button class="nivel">LVL2</button>
          <button class="nivel">LVL3</button>
+         
     </main>
     <footer class="pagefooter">
         <section id="contact">                                               
@@ -47,5 +48,17 @@
         </div>
         </section>
     </footer>
+
+    <script>
+    function activar(btn) {
+        document.querySelectorAll('.btnm').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        }
+    
+    function activar2(btn) {
+        document.querySelectorAll('.btns').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        }
+    </script>
 </body>
 </html>
