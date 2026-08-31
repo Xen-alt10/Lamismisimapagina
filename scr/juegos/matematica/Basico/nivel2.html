@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego 1</title>
+    
 </head>         
 <body>
-    <h1>Ejercicio 1</h1>
-    <h2>Nivel 1 - Averiguar X</h2>
+    <h2>Nivel 2 - Averiguar X</h2>
     <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
 
-    <p>X / 5 = 125</p>
+    <p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <msqrt>
+            <mrow><mn>81</mn><mo>/</mo> <mi>x</mi></mrow>
+        </msqrt>
+        <mo>=</mo> <msqrt><mrow><mn>9</mn></mrow></msqrt>
+    </math></p>
     <p id="nivel-1" ></p>
-    <button id="posres1" type="button" onclick="incorrecto() ">X = 5</button>
-    <button id="posres2" type="button" onclick="correcto()">X = 625</button>
-    <button id="posres3" type="button" onclick="incorrecto()">X = 500</button>
-    <br>
-    <br>
-    <button type="button" onclick="resolver1()">resolver</button>
-    <button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
+    <div id="multiple-choice" style="margin-bottom: 15px">
+        <button id="posres1" type="button" onclick="incorrecto() ">X = 15</button>
+        <button id="posres2" type="button" onclick="incorrecto()">X = 9</button>
+        <button id="posres3" type="button" onclick="correcto()">X = 3</button>
+    </div>
+    
+    <div id = "seccion-indev">
+        <button type="button" onclick="resolver1()">resolver</button>
+        <button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
+    </div>
+
+    <a href="nivel2.html"><h4 id="proximonivel"></h4></a>
+    
     <script>
         const posres1= document.getElementById('posres1');
         const posres2= document.getElementById('posres2');
         const posres3= document.getElementById('posres3');
 
         function resolver1(){
-        document.getElementById("nivel-1").innerHTML = 'X = 625'
+        document.getElementById("nivel-1").innerHTML = 'X = 3'
 
         }
         function incorrecto(){
         document.getElementById("nivel-1").innerHTML = '<p style="color: red;"> RESPUESTA INCORRECTA LA PUTA QUE TE PARIO ';
-           posres1.disabled = true;
+        document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
+            posres1.disabled = true;
            posres2.disabled = true;
            posres3.disabled = true;
 
         }    
         function correcto(){
         document.getElementById("nivel-1").innerHTML = '<p style="color: green;"> RESPUESTA CORRECTA LA PUTA QUE TE PARIO ';
-           posres1.disabled = true;
+        document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
+            posres1.disabled = true;
            posres2.disabled = true;
            posres3.disabled = true;
         } 
