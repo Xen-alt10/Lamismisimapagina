@@ -1,64 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scr/estilos/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title> Quizz </title>
+    <link rel="stylesheet" href="/scr/estilos/index.css">
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <section id="home">
-        <h1> lamismisimapagina </h1>
-        <nav class="nav">
-            <a href="#home"><i class="fa-solid fa-house"></i> Inicio</a>
-            <a href="recompensas.html"><i class="fa-solid fa-info-circle"></i> recompensas</a>
-            <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> historial de ejercicios</a>
-            <a href="cuenta.html"><i class="fa-solid fa-gamepad"></i> cuenta</a>
-        </nav>
-        </section>
+    <header>
+        <h1>la mismisima pagina</h1>
     </header>
-    <main>
-        <h1>¿Que estas aprendiendo ahora?</h1>
-        <h1>Materia:</h1>
-        <button class="btnm" onclick="activar(this)">matematica</button>
-        <button class="btnm" onclick="activar(this)">fisica</button>
-        <button class="btnm" onclick="activar(this)">programacion</button>
 
-        <h2>Nivel</h2>
-        <button class="btns" onclick="activar2(this)">Basico</button>
-        <button class="btns" onclick="activar2(this)">Intermedio</button> 
-        <button class="btns" onclick="activar2(this)">Avanzado</button>
-        <h1>empieza</h1>
-
-       <button class="nivel">LVL1</button>
-        <button class="nivel">LVL2</button>
-         <button class="nivel">LVL3</button>
-         
-    </main>
-    <footer class="pagefooter">
-        <section id="contact">                                               
-        <div class="contactos" id="contactos"> 
-            <h2> Contactos </h2>
-            <ul>
-                <li><a href="mailto:lamismisimapagina@gmail.com"><i class="fa-regular fa-envelope"></i> Correo Electrónico</a></li>
-                <li><a href="https://github.com/Xen-alt10/Lamismisimapagina.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                </ul>
+    <div id="frente">
+        <div>
+             <h2>aprende de forma 
+                <br>mas simple</h2>
         </div>
-        </section>
-    </footer>
+    <div>
+        <a href="login.html"><button>Tengo una cuenta</button></a>
+        <a href="sign.html"><button>soy nuevo</button></a>
+    </div>
 
-    <script>
-    function activar(btn) {
-        document.querySelectorAll('.btnm').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        }
-    
-    function activar2(btn) {
-        document.querySelectorAll('.btns').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        }
-    </script>
+    </div>
 </body>
 </html>
