@@ -7,21 +7,27 @@
     
 </head>         
 <body>
-    <h2>Nivel 2 - Averiguar X</h2>
+    <h2>Nivel 4 - Averiguar X</h2>
     <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
 
     <p>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <msqrt>
-            <mrow><mn>81</mn><mo>/</mo> <mi>x</mi></mrow>
-        </msqrt>
-        <mo>=</mo> <msqrt><mrow><mn>9</mn></mrow></msqrt>
+        
+        <mrow>
+            <mn>5</mn>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mn>2</mn>
+            <mo>=</mo>
+            <mn>18</mn>
+        </mrow>
     </math></p>
     <p id="nivel-1" ></p>
     <div id="multiple-choice" style="margin-bottom: 15px">
-        <button id="posres1" type="button" onclick="incorrecto() ">X = 15</button>
-        <button id="posres2" type="button" onclick="correcto()">X = 9</button>
-        <button id="posres3" type="button" onclick="incorrecto()">X = 3</button>
+        <button id="posres1" type="button" onclick="incorrecto() ">X = 3.2</button>
+        <button id="posres2" type="button" onclick="correcto()">X = 4</button>
+        <button id="posres3" type="button" onclick="incorrecto()">X = 20</button>
     </div>
     
     <div id = "seccion-indev">
@@ -29,7 +35,7 @@
         <button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
     </div>
 
-    <a href="nivel3.html"><h4 id="proximonivel"></h4></a>
+    <a href="nivel5.html"><h4 id="proximonivel"></h4></a>
     
     <script>
         const posres1= document.getElementById('posres1');
@@ -37,7 +43,7 @@
         const posres3= document.getElementById('posres3');
 
         function resolver1(){
-        document.getElementById("nivel-1").innerHTML = 'X = 3'
+        document.getElementById("nivel-1").innerHTML = 'X = 4'
 
         }
         function incorrecto(){

@@ -19,7 +19,7 @@
     
     <div id = "seccion-indev" style="margin-bottom: 15px">
         <button type="button" onclick="resolver1()">resolver</button>
-        <button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
+        <button type="button" onclick="indev_retry()">retry (INDEV)</button>
     </div>
 
     <a href="nivel2.html"><h4 id="proximonivel"></h4></a>
@@ -52,6 +52,7 @@
             posres1.disabled = false;
             posres2.disabled = false;
             posres3.disabled = false;
+            document.getElementById("proximonivel").innerHTML = '';
         }
     </script>    
 </body>
