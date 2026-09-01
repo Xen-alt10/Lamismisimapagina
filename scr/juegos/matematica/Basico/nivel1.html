@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="/scr/estilos/mathbasico.css">
 </head>         
 <body>
+    
     <h2>Nivel 1 - Averiguar X</h2>
     <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
+    <div id="ejercicio">
 
-    <p>X / 5 = 125</p>
+        <div id="ecuacion">
+        <p>X / 5 = 125</p>
+        </div>
+    
     <p id="nivel-1" ></p>
     <div id="multiple-choice" style="margin-bottom: 15px">
         <button id="posres1" type="button" onclick="incorrecto() ">X = 375</button>
@@ -24,6 +29,8 @@
     </div>
 
     <a href="nivel2.html"><h4 id="proximonivel"></h4></a>
+    </div>
+    
     <script>
         const posres1= document.getElementById('posres1');
         const posres2= document.getElementById('posres2');

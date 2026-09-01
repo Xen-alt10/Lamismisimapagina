@@ -10,14 +10,20 @@
 <body>
     <h2>Nivel 2 - Averiguar X</h2>
     <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
-
-    <p>
+    <div id="ejercicio">
+    
+    <div id="ecuacion">
+        
     <math xmlns="http://www.w3.org/1998/Math/MathML">
         <msqrt>
             <mrow><mn>81</mn><mo>/</mo> <mi>x</mi></mrow>
         </msqrt>
         <mo>=</mo> <msqrt><mrow><mn>9</mn></mrow></msqrt>
     </math></p>
+    
+    </div>
+    <p>
+   
     <p id="nivel-1" ></p>
     <div id="multiple-choice" style="margin-bottom: 15px">
         <button id="posres1" type="button" onclick="incorrecto() ">X = 15</button>
@@ -31,6 +37,8 @@
     </div>
 
     <a href="nivel3.html"><h4 id="proximonivel"></h4></a>
+    </div>
+
     
     <script>
         const posres1= document.getElementById('posres1');
