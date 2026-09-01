@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+body{
+    color: #fff;
+    background-color: rgb(82, 82, 112);
+}
+
+*{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 100px;
+    background: #0a3d62;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100; 
+}
+.header .logo {
+    font-size: 1.8em;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header .nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+#titulo{
+    margin-top: 150px;
+}
+
+#r1{
+    border: 2px solid black;
+    background-color: #0c2536;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+#r1:hover{
+    border: 2px solid rgb(0, 0, 0);
+    width: 310px;
+    height: 110px ;
+}
+
+.bc_1 {
+  width: 280px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bp_1 {
+  height: 100%;
+  width: 65%;
+  background-color: #4c90af;
+  transition: width 0.3s ease;
+}
+
+@keyframes llenar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.bp_1 {
+  height: 100%;
+  background-color: #4c90af;
+  animation: llenar 3s ease-in-out forwards;
+}
+
+#r2{
+    border: 2px solid black;
+    background-color: #0c2536;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+#r2:hover{
+    border: 2px solid rgb(0, 0, 0);
+    width: 310px;
+    height: 110px ;
+    margin-bottom: 15px;
+}
+
+.bc_2 {
+  width: 280px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bp_2 {
+  height: 100%;
+  width: 65%;
+  background-color: #4c90af;
+  transition: width 0.9s ease;
+}
+
+@keyframes llenar2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.bp_2 {
+  height: 100%;
+  background-color: #4c90af;
+  animation: llenar 7s ease-in-out forwards;
+}
+
+
+#r3{
+    border: 2px solid black;
+    background-color: #0c2536;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+#r3:hover{
+    border: 2px solid rgb(0, 0, 0);
+    width: 310px;
+    height: 110px ;
+    margin-bottom: 15px;
+}
+
+.bc_3 {
+  width: 280px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bp_3 {
+  height: 100%;
+  width: 65%;
+  background-color: #4c90af;
+  transition: width 9s ease;
+}
+
+@keyframes llenar3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 2px;
+  }
+}
+
+.bp_3 {
+  height: 100%;
+  background-color: #4c90af;
+  animation: llenar 80s ease-in-out forwards;
+}
+
+#r4{
+    border: 2px solid black;
+    background-color: #0c2536;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+#r4:hover{
+    border: 2px solid rgb(0, 0, 0);
+    width: 310px;
+    height: 110px ;
+    margin-bottom: 15px;
+}
+
+.bc_4 {
+  width: 280px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.bp_4 {
+  height: 100%;
+  width: 65%;
+  background-color: #4c90af;
+  transition: width 9s ease;
+}
+
+@keyframes llenar3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 2px;
+  }
+}
+
+.bp_4 {
+  height: 100%;
+  background-color: #4c90af;
+  animation: llenar 80s ease-in-out forwards;
+}
