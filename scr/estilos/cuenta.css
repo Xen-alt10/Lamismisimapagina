@@ -38,16 +38,78 @@ body{
     margin-left: 40px;
 }
 
-.circulo{
-    margin-top: 250px;
-    margin-left: 50px;
-  width: 200px;
-  height: 200px;
+.fpf{
+    margin-left: px;
+  width: 600px;
+  height: 400px;
   background-color: rgb(65, 71, 88);
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 h2{
     color: black;
-    margin-left: 90px;
+    margin-left: 5px;
+}
+
+.titulo{
+    margin-top: 140px;
+    color: rgb(36, 35, 35);
+}
+
+h6{
+    color: black;
+    margin-left: 5px;
+}
+
+#cuenta{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: auto auto; 
+    gap: 15px;
+}
+
+#lista{
+    display: grid; 
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: auto auto; 
+    gap: 30px;
+}
+
+.logro{
+    border: 3px solid #0a3d62;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease; 
+}
+
+.logro:hover{
+    width: 250px;
+    height: 80px;
+    
+}
+
+#info{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: auto auto; 
+    gap: 15px;
+}
+
+.info_bloque{
+    border: 3px solid #0a3d62;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease; 
+}
+
+.info_bloque:hover{
+    width: 250px;
+    height: 80px;
+    
 }

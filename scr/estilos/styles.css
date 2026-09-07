@@ -72,19 +72,21 @@ main{
     box-shadow: #fff;
 }
 
-#materia{
-    border: 1px solid #89b1e5;
+
+.btnm {
+  border: 1px solid #89b1e5;
     background-color:#89b1e5;
     font-size: 16px;
     border-radius: 15px;
     width: 140px;
     height: 140px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
-#materia:hover{
-    background-color: #fac107;
+.btnm:hover:not(.active) {
+  background-color: #031c41;
+  border: 1px solid #031c41;
     color: #ffffff;
     font-size: 18px;
     letter-spacing: 0.1em;
@@ -93,8 +95,18 @@ main{
     box-shadow: #fff;
 }
 
+.btnm.active {
+  background-color: #031c41;
+  border: 1px solid #031c41;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    width: 170px;
+    height: 150px;
+    box-shadow: #fff;
+}
 
-.nivel-seleccion{
+.btns {
     border: 1px solid #eb8f8c;
     background-color:#e58f89;
     font-size: 12px;
@@ -105,8 +117,9 @@ main{
     transition: 0.5s;
 }
 
-.nivel-seleccion:hover{
-    background-color: #882b2b;
+.btns:hover:not(.active) {
+  background-color: #882b2b;
+  border: 1px solid #882b2b;
     color: #ffffff;
     font-size: 18px;
     letter-spacing: 0.1em;
@@ -115,3 +128,13 @@ main{
     box-shadow: #fff;
 }
 
+.btns.active {
+ background-color: #882b2b;
+ border: 1px solid #882b2b;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    width: 140px;
+    height: 120px;
+    box-shadow: #fff;
+}

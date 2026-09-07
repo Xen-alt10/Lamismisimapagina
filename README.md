@@ -1,2 +1,8 @@
 # Lamismisimapagina
-Proyecto el cual consiste en una web interactuable con el usuario donde el mismo podra aprender sobre contenidos lógicos
+Proyecto que consiste en una pagina web, diseñada para aprender sobre contenidos lógicos como lo son matemáticas y programación
+
+# Contribuidores
+- SpecIux
+- Xen-alt10
+- teolaguna
+
