@@ -25,10 +25,11 @@
     
     <div id = "seccion-indev" style="margin-bottom: 15px">
         <button type="button" onclick="resolver1()">resolver</button>
-        <button type="button" onclick="indev_retry()">retry (INDEV)</button>
     </div>
 
     <a href="nivel2.html"><h4 id="proximonivel"></h4></a>
+    <a href="/scr/inicio.html"><h4 id="inicio"></h4></a>
+
     </div>
     
     <script>
@@ -40,28 +41,28 @@
         document.getElementById("nivel-1").innerHTML = 'X = 625'
 
         }
-        function incorrecto(){
-        document.getElementById("nivel-1").innerHTML = '<p style="color: red;"> RESPUESTA INCORRECTA LA PUTA QUE TE PARIO ';
-        document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
-           posres1.disabled = true;
-           posres2.disabled = true;
-           posres3.disabled = true;
-
-        }    
+       function incorrecto() {
+    document.getElementById("nivel-1").innerHTML = '<p style="color: red;">RESPUESTA INCORRECTA LA PUTA QUE TE PARIO</p>';
+    document.getElementById("seccion-indev").innerHTML = '<button type="button" onclick="indev_retry()">reintentar</button>';
+}   
         function correcto(){
         document.getElementById("nivel-1").innerHTML = '<p style="color: green;"> RESPUESTA CORRECTA LA PUTA QUE TE PARIO ';
         document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
+        document.getElementById("inicio").innerHTML = 'Volver Al Inicio';
+
            posres1.disabled = true;
            posres2.disabled = true;
            posres3.disabled = true;
         } 
         
-        function indev_retry(){
+        function indev_retry() {
             posres1.disabled = false;
             posres2.disabled = false;
             posres3.disabled = false;
             document.getElementById("proximonivel").innerHTML = '';
-        }
+            document.getElementById("nivel-1").innerHTML = '';
+            document.getElementById("seccion-indev").innerHTML = '<button type="button" onclick="resolver1()">resolver</button><button type="button" onclick="indev_retry()">retry (INDEV)</button>';
+}
     </script>    
 </body>
 </html>
