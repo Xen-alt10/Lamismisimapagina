@@ -1,5 +1,5 @@
 # Lamismisimapagina
-Proyecto que consiste en una pagina web, diseñada para aprender sobre contenidos lógicos como lo son matemáticas y programación
+Pagina Web para profundizar el aprendizaje sobre contenidos logicos
 
 # Contribuidores
 - SpecIux
