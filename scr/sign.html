@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - La mismísima página</title>
+    <link rel="stylesheet" href="estilos/sign.css">
+</head>
+<body>
+    <header>
+        <h1>La mismisima pagina</h1>
+    </header>
+    <section class="sectionl" id="register">
+        <div class="wrapper-login">
+            <h2>CREAR CUENTA</h2>
+            <div id="register-error" style="display:none;color:#e74c3c;font-size:.9em;margin-bottom:10px;text-align:center;background:#fdecea;padding:8px;border-radius:6px"></div>
+            <div class="input-box">
+                <input type="text" id="register-username" autocomplete="username" maxlength="20" required placeholder=" ">
+                <label>elegí tu usuario (3-20)</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="register-password" autocomplete="new-password" required placeholder=" ">
+                <label>creá tu contraseña</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="register-confirm" autocomplete="new-password" required placeholder=" ">
+                <label>repetí tu contraseña</label>
+            </div>
+            <button class="btn" id="btn-register" type="button">Crear cuenta</button>
+            <p>¿ya tenés cuenta? <a href="login.html">iniciá sesión</a></p>
+            <p style="margin-top:8px"><a href="index.html">← volver al inicio</a></p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('keydown', e=>{ if(e.key==='Enter') document.getElementById('btn-register')?.click(); });
+    </script>
+    <script src="java/auth.js"></script>
+</body>
+</html>

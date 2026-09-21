@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar sesión - La mismísima página</title>
+    <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
+    <header>
+        <h1>la mismisima pagina</h1>
+    </header>
     <section class="sectionl" id="login">
         <div class="wrapper-login">
-            <h2>INICIAR SESION</h2>
-            <div id="login-error" style="display:none;color:#e74c3c;font-size:.9em;margin-bottom:10px;text-align:center"></div>
+            <h2>INICIAR SESIÓN</h2>
+            <div id="login-error" style="display:none;color:#e74c3c;font-size:.9em;margin-bottom:10px;text-align:center;background:#fdecea;padding:8px;border-radius:6px"></div>
+            <!-- Mantengo ids viejos para compat con auth.js, pero ahora es username -->
             <div class="input-box">
-                <input type="email" id="login-email" required>
-                <label>escribe tu email</label>
+                <input type="text" id="login-email" autocomplete="username" required placeholder=" ">
+                <label>tu usuario</label>
             </div>
+            <!-- alias nuevo -->
+            <input type="hidden" id="login-username">
             <div class="input-box">
-                <input type="password" id="login-password" required>
-                <label>escribe tu contraseña</label>
+                <input type="password" id="login-password" autocomplete="current-password" required placeholder=" ">
+                <label>tu contraseña</label>
             </div>
             <div class="remember">
                 <label><input type="checkbox"> recordame</label>
-                <a href="#">olvidaste tu contraseña?</a>
+                <a href="#">¿olvidaste tu contraseña?</a>
             </div>
-            <button class="btn" id="btn-login">Iniciar sesión</button>
-            <p>¿no tenes una cuenta? <a href="inicio.html">crea una cuenta</a></p>
+            <button class="btn" id="btn-login" type="button">Iniciar sesión</button>
+            <p>¿no tenés una cuenta? <a href="sign.html">creá una cuenta</a></p>
+            <p style="margin-top:8px"><a href="index.html">← volver al inicio</a></p>
         </div>
     </section>
+    <script>
+        // alias: sync login-email -> login-username para auth.js
+        const _e = document.getElementById('login-email');
+        const _u = document.getElementById('login-username');
+        if(_e && _u){ _e.addEventListener('input', ()=> _u.value=_e.value); _u.value=_e.value; }
+        // enter para loguear
+        document.addEventListener('keydown', e=>{ if(e.key==='Enter') document.getElementById('btn-login')?.click(); });
+    </script>
+    <script src="java/auth.js"></script>
 </body>
-</html>l
+</html>

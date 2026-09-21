@@ -11,9 +11,52 @@
     grid-template-columns: repeat(2,1fr); 
     grid-template-rows: auto auto; 
     gap: 15px;
+    padding: 0 16px;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size: 30px;
+    transition: 0.5s;
 }
 
 body{
     background-color: rgb(59, 59, 59);
     color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0 0 0 50px;
+    padding: 16px 0;
+}
+header{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(9, 1, 52);
+    border-bottom: 1px solid rgb(3, 13, 85);
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+button{
+    border-radius: 15px;
+    background-color: rgb(2, 78, 77);
+    border: 1px solid rgb(2, 78, 77);
+    font-size: 20px;
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    transition: 0.5s ease-in-out;
+}
+/* botones uno debajo del otro */
+#frente > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgb(150, 150, 199);
 }

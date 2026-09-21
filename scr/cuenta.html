@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/scr/estilos/cuenta.css">
+     <link rel="stylesheet" href="estilos/cuenta.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Cuenta</title>
 </head>
@@ -21,13 +21,14 @@
     </header>
 
 
-    <h1 class="titulo">cuenta</h1>
+     <h1 class="titulo">cuenta</h1>
+    <div style="text-align:center;margin:10px"><button id="btn-logout" class="btn" style="padding:6px 14px;cursor:pointer">Cerrar sesión</button> <a href="login.html" id="link-login" style="display:none">Iniciar sesión</a></div>
     <div id="cuenta">
         <div id="personal">
-            <div class="fpf">usuario</div>
-            <h2>(nombre)</h2>
-            <h6>(@nombre-ee)</h6>
-            <h6>unido en x/x/XXX</h6>
+            <div class="fpf">?</div>
+            <h2>cargando...</h2>
+            <h6>@...</h6>
+            <h6>nivel ...</h6>
         </div>
         <div id="Logros">
             <h2>Logros</h2>
@@ -51,5 +52,10 @@
             </div>
         </div>
     </div>
+    <script src="java/auth.js"></script>
+    <script>
+      // cuenta requiere login; si no hay sesión te manda a login.html
+      checkAuth({ redirectIfNoAuth: true, renderCuenta: true });
+    </script>
 </body>
 </html>
