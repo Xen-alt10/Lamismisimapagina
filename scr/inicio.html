@@ -51,27 +51,5 @@
         </div>
         </section>
     </footer>
-
-    <script>
-    function activar(btn) {
-        document.querySelectorAll('.btnm').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        }
-    
-    function activar2(btn) {
-        document.querySelectorAll('.btns').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        }
-    </script>
-    <script src="java/auth.js"></script>
-    <script>
-      // proteger inicio: si no logueado -> login
-      checkAuth({redirectIfNoAuth:true}).then(user=>{
-        if(user){
-          const b=document.getElementById('user-banner');
-          if(b) b.textContent = `Hola ${user.username} · Nivel ${user.nivel} · ${user.xp_ganada}/${user.xp_necesaria} XP`;
-        }
-      });
-    </script>
 </body>
 </html>

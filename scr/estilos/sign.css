@@ -52,7 +52,6 @@ button:hover{
     background-color: rgb(150, 150, 199);
 }
 
-/* centrar formulario al medio */
 body{
     min-height: 100vh;
     display: flex;

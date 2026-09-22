@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego 1</title>
-     <link rel="stylesheet" href="../../../estilos/mathbasico.css">
+     <link rel="stylesheet" href="../../../estilos/lvl2.css">
     
 </head>         
 <body>
-    <h2>Nivel 2 - Averiguar X</h2>
+    <header>
+        <h1>Lamismisimapagina</h1>
+        <a href="../../../inicio.html">volver al inicio</a>
+    </header>
+    <div id="ejercicio1">
+     <h2>Nivel 2 - Averiguar X</h2>
     <p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
     <div id="ejercicio">
     
@@ -33,12 +38,13 @@
     
     <div id = "seccion-indev">
         <button type="button" onclick="resolver1()">resolver</button>
-        <button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
+        <button id="retry" type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
     </div>
 
     <a href="nivel3.html"><h4 id="proximonivel"></h4></a>
     </div>
 
+    </div>
     
     <script>
         const posres1= document.getElementById('posres1');
@@ -73,7 +79,6 @@
             document.getElementById("proximonivel").innerHTML = '';
         }
     </script>    
-    <script src="../../../java/auth.js"></script>
 </body>
 </html>
  
