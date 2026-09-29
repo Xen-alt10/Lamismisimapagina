@@ -6,9 +6,9 @@ if ($conexion ->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST["usuario"];
-    $contraseña = $_POST[password_hash("pass", PASSWORD_BCRYPT)];
-    
+    $usuario = $_POST["username"];
+    $contraseña = $_POST["pass"];
+    $hashpass = password_hash($contraseña, PASSWORD_BCRYPT);
     if ($usuario == "" || $contraseña == "") { // si el usuario y la contraseña estan vacios
         echo // añade linea de error (linea 12 a linea 15)
         '
@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ';
         exit;
     }
-    $sql = "INSERT INTO usuarios (usuario, contraseña)
-            VALUES ('$username', '$contraseña')";
+    $sql = "INSERT INTO usuarios (username, pass_hash)
+            VALUES ('$usuario', '$hashpass');";
     $conexion->query($sql);
     
 }   
