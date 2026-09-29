@@ -52,7 +52,7 @@ main{
     margin-top: 150px;
 }
 
-.nivel{
+.nivel1{
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -63,9 +63,10 @@ main{
     cursor: pointer;
     margin-left: 10px;
     transition: 0.45s;
+    display: block;
 }
 
-.nivel:hover{
+.nivel1:hover{
     background-color: #1468a3;
     width: 120px;
     height: 120px;
@@ -135,6 +136,72 @@ main{
     font-size: 18px;
     letter-spacing: 0.1em;
     width: 140px;
+    height: 120px;
+    box-shadow: #fff;
+}
+
+.nivel2{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: 1px solid #0a3d62;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.45s;
+    display: block;
+    margin-left: 100px;
+}
+
+.nivel2:hover{
+    background-color: #1468a3;
+    width: 120px;
+    height: 120px;
+    box-shadow: #fff;
+}
+
+.nivel3{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: 1px solid #0a3d62;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.45s;
+    display: block;
+    margin-left: 200px;
+}
+
+.nivel3:hover{
+    background-color: #1468a3;
+    width: 120px;
+    height: 120px;
+    box-shadow: #fff;
+}
+
+.nivel4{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: 1px solid #0a3d62;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.45s;
+    display: block;
+    margin-left: 300px;
+}
+
+.nivel4:hover{
+    background-color: #1468a3;
+    width: 120px;
     height: 120px;
     box-shadow: #fff;
 }

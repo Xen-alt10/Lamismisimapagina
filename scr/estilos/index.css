@@ -48,7 +48,7 @@ button{
     height: 100px;
     transition: 0.5s ease-in-out;
 }
-/* botones uno debajo del otro */
+
 #frente > div:last-child{
     display: flex;
     flex-direction: column;
