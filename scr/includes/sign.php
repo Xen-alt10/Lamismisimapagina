@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div menuSignIn>
-        <h1>Iniciar sesion</h1>
+        <h1>Crear cuenta</h1>
         <p>Introducir las credenciales requeridas</p>
         <form method="post">
             <p class="elementoForm"> <!--    asignacion de username    -->
