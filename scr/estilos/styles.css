@@ -83,7 +83,6 @@ main{
     box-shadow: #fff;
 }
 
-
 .btnm {
   border: 1px solid #89b1e5;
     background-color:#89b1e5;
@@ -232,6 +231,28 @@ main{
 }
 
 .nivel5:hover{
+    background-color: #1468a3;
+    width: 120px;
+    height: 120px;
+    box-shadow: #fff;
+}
+
+.nivel6{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: 1px solid #0a3d62;
+    cursor: pointer;
+    transition: 0.45s;
+    display: block;
+    margin: 0;
+    transform: translateX(-60px);
+}
+
+.nivel6:hover{
     background-color: #1468a3;
     width: 120px;
     height: 120px;
