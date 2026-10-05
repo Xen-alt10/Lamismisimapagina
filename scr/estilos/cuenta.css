@@ -39,16 +39,37 @@ body{
 }
 
 .fpf{
-    margin-left: px;
-  width: 600px;
-  height: 400px;
+  width: 64px;
+  height: 64px;
   background-color: rgb(65, 71, 88);
-  border-radius: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
 }
 
-h2{
-    color: black;
-    margin-left: 5px;
+#personal{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.15;
+}
+
+#personal h2{
+    margin: 0;
+    font-size: 28px;
+}
+
+#personal h6{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#personal h6:nth-of-type(1){
+    color: #5f6b7a;
 }
 
 .titulo{
@@ -56,60 +77,59 @@ h2{
     color: rgb(36, 35, 35);
 }
 
-h6{
-    color: black;
-    margin-left: 5px;
+#cuenta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    gap: 8px;
+    align-items: start;
 }
 
-#cuenta{
-    display: grid; 
-    grid-template-columns: repeat(2,1fr); 
-    grid-template-rows: auto auto; 
-    gap: 15px;
+#personal, #Logros, #Informacion{
+    margin: 0;
+}
+
+#Logros h2, #Informacion h2{
+    margin: 0 0 8px;
 }
 
 #lista{
-    display: grid; 
-    grid-template-columns: repeat(4,1fr); 
-    grid-template-rows: auto auto; 
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 
 .logro{
-    border: 3px solid #0a3d62;
-    border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    color: black;
-    font-size: 25px;
-    transition: 0.5s ease; 
-}
-
-.logro:hover{
-    width: 250px;
-    height: 80px;
-    
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: #151f2b;
+    border-radius: 16px;
+    min-height: 96px;
+    padding: 16px 18px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 #info{
-    display: grid; 
-    grid-template-columns: repeat(3,1fr); 
-    grid-template-rows: auto auto; 
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 
 .info_bloque{
-    border: 3px solid #0a3d62;
-    border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    color: black;
-    font-size: 25px;
-    transition: 0.5s ease; 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: #151f2b;
+    border-radius: 16px;
+    min-height: 96px;
+    padding: 16px 18px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
 }
-
-.info_bloque:hover{
-    width: 250px;
-    height: 80px;
-    
+h2{
+    color: #000000;
 }
