@@ -26,6 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuarios (username, pass_hash)
             VALUES ('$usuario', '$hashpass');";
     $conexion->query($sql);
+
+    $last_id = $conexion->insert_id;
+    $sql = "INSERT INTO xp_usuario (usuario_asocc)
+            VALUES ('$last_id');";
+    $conexion->query($sql);
     
 }   
 
@@ -61,3 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+
+<?php 
+    $conexion->close();
+?>
