@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 body{
-    color: #fff;
+    color: #ffffff;
     background-color: rgb(216, 216, 255);
 }
 
@@ -19,7 +19,7 @@ body{
     background: #0a3d62;
     display: flex;
     justify-content: space-between;
-    z-index: 100; 
+    z-index: 100;
 }
 .header .logo {
     font-size: 1.8em;
@@ -101,11 +101,11 @@ body{
 
 .logro{
     border: 1px solid rgba(255, 255, 255, 0.18);
-    background: #151f2b;
+    background-color: #151f2b;
     border-radius: 16px;
     min-height: 96px;
     padding: 16px 18px;
-    color: #000000;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 700;
     display: flex;
@@ -124,7 +124,7 @@ body{
     border-radius: 16px;
     min-height: 96px;
     padding: 16px 18px;
-    color: #000000;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 700;
     display: flex;
@@ -132,4 +132,14 @@ body{
 }
 h2{
     color: #000000;
+}
+
+#xpnivel{
+    margin-top: 1%;
+    padding: 1%;
+    color: #000000;
+    border: 5px solid rgb(0, 30, 36);
+    border-radius: 45px;
+    background-color: rgb(193, 193, 255);;
+    
 }
