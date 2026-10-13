@@ -10,12 +10,12 @@
 <body>
         <header class="header">
         <section id="home">
-        <h1> lamismisimapagina </h1>
+        <h1> La mismísima página </h1>
         <nav class="nav">
             <a href="../inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
-            <a href="../recompensas.html"><i class="fa-solid fa-info-circle"></i> recompensas</a>
-            <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> historial de ejercicios</a>
-            <a href="cuenta.php"><i class="fa-solid fa-gamepad"></i> cuenta</a>
+            <a href="../recompensas.html"><i class="fa-solid fa-info-circle"></i> Recompensas</a>
+            <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> Historial de ejercicios</a>
+            <a href="cuenta.php"><i class="fa-solid fa-gamepad"></i> Cuenta</a>
         </nav>
         </section>
     </header>   
@@ -26,23 +26,22 @@
     <div id="cuenta">
         <div id="personal">
             <div class="fpf">?</div>
-            <h2>usuario</h2>
-            <h6>@usuario</h6>
-            <h6>nivel actual</h6>
+            <h2>Usuario</h2>
+            <h6>Nivel actual</h6>
         </div>
         <div id="Logros">
             <h2>Logros</h2>
             <div id="lista">
-                <div class="logro">logro</div>
-                <div class="logro">lgro1</div>
+                <div class="logro">Logro</div>
+                <div class="logro">Logro1</div>
             </div>
         </div>
         <div id="Informacion">
-            <h2>informacion</h2>
+            <h2>Informacion</h2>
             <div id="info">
-                <div class="info_bloque">curso</div>
-                <div class="info_bloque">nivel</div>
-                <div class="info_bloque">porcentaje</div>
+                <div class="info_bloque">Curso</div>
+                <div class="info_bloque">Nivel</div>
+                <div class="info_bloque">Porcentaje</div>
             </div>
         </div>
     </div>
