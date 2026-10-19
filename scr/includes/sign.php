@@ -1,6 +1,6 @@
 <?php 
 
-$conexion = new mysqli("localhost", "root", "", "lamismisimabasededatos");
+$conexion = new mysqli("localhost", "phpmyadmin", "RedesInformaticas", "lamismisimabasededatos");
 if ($conexion ->connect_error) {
     die ("Error de conexion: " . $conexion->connect_error);
 }
