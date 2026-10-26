@@ -45,6 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../estilos/sign2.css">
 </head>
 <body>
+    <header>
+        <h1>La mismisima pagina</h1>
+    </header>
     <div menuSignIn>
         <h1>Crear cuenta</h1>
         <p>Introducir las credenciales requeridas</p>

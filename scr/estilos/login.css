@@ -1,56 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
-*{
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
-body{
-    background-color: rgb(59, 59, 59);
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
-}
-h1{
-    margin: 0 0 0 50px;
-    padding: 16px 0;
-}
-header{
-    width: 100%;
-    margin: 0;
+* {
     box-sizing: border-box;
-    background-color: rgb(9, 1, 52);
-    border-bottom: 1px solid rgb(3, 13, 85);
-    padding: 0;
-    margin-bottom: 16px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-button{
-    border-radius: 15px;
-    background-color: rgb(0, 37, 37);
-    border: 1px solid rgb(2, 78, 77);
-    font-size: 15px;
-    color: aliceblue;
-    width: 200px;
-    height: 50px;
-    transition: 0.5s ease-in-out;
-}
-button:hover{
-    background-color: rgb(150, 150, 199);
-}
-
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-a{
+    margin: 0;
+    padding: 0 0 24px;
+    background-color: rgb(59, 59, 59);
     color: aliceblue;
-    text-decoration: none;
 }
 
-#MenuLogIn{
-    text-align: center; 
+header {
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: rgb(9, 1, 52);
+    border-bottom: 1px solid rgb(3, 13, 85);
+}
+
+header h1 {
+    margin: 0 0 0 50px;
+    padding: 16px 0;
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.elementoForm {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+}
+
+.elementoForm label {
+    color: #d8e6f3;
+    font-size: 0.92rem;
+}
+
+.elementoForm input {
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 12px;
+    border: 1px solid #647487;
+    border-radius: 8px;
+    outline: none;
+    background: #2b2b2b;
+    color: aliceblue;
+    font: inherit;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.elementoForm input:focus {
+    border-color: #89b1e5;
+    box-shadow: 0 0 0 3px rgba(137, 177, 229, 0.2);
+}
+
+#MenuLogIn {
+    width: calc(100% - 32px);
+    max-width: 440px;
+    align-self: center;
+    margin: auto;
+    padding: 32px 28px;
+    border: 1px solid rgba(137, 177, 229, 0.28);
+    border-radius: 16px;
+    background: rgba(0, 162, 255, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#MenuLogIn h1 {
+    margin: 0 0 10px;
+    color: aliceblue;
+    font-size: 1.8rem;
+}
+
+#MenuLogIn > p {
+    margin: 0 0 28px;
+    color: #c7d8e8;
+    line-height: 1.6;
+}
+
+#MenuLogIn form {
+    display: grid;
+    gap: 18px;
+}
+
+#MenuLogIn button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 4px;
+    border: 1px solid #0a3d62;
+    border-radius: 8px;
+    background: #0a3d62;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+#MenuLogIn button:hover {
+    border-color: #1468a3;
+    background: #1468a3;
+}
+
+#MenuLogIn button:focus-visible {
+    outline: 3px solid #89b1e5;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        margin-left: 20px;
+    }
+
+    #MenuLogIn {
+        padding: 26px 20px;
+    }
 }
