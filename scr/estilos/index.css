@@ -32,7 +32,7 @@
 }
 
 body{
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(33, 48, 66);
     color: aliceblue;
     margin: 0;
     padding: 0;
@@ -70,7 +70,7 @@ button{
     justify-content: center;
 }
 
-#objetivo > div:last-child{
+#objetivo{
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -80,4 +80,8 @@ button{
 
 button:hover{
     background-color: rgb(150, 150, 199);
+}
+
+p{
+    margin-left: 100px;
 }
