@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign in</title>
+    <link rel="stylesheet" href="../estilos/sign2.css">
 </head>
 <body>
     <div menuSignIn>
@@ -57,8 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label>Contraseña: </label>
                 <input type="password" name="pass">
             </p>
-        
-        <button type="submit">Crear Cuenta  </button>
+        <button type="submit"> Crear Cuenta </button>
         </form>
     </div>
     
