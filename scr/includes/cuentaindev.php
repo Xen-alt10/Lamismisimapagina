@@ -18,6 +18,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Document</title>
 </head>
 <body>
-    
+    iniciaste sesiiiiiiiiiioon
 </body>
 </html>
