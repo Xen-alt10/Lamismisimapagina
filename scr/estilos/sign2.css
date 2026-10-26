@@ -7,10 +7,9 @@
 body {
   min-height: 100vh;
   margin: 0;
-  padding: 24px 16px;
+  padding: 0 0 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background-color: rgb(59, 59, 59);
   color: aliceblue;
   font-family: "Comfortaa", sans-serif;
@@ -19,9 +18,24 @@ body {
   font-style: normal;
 }
 
+header {
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: rgb(9, 1, 52);
+  border-bottom: 1px solid rgb(3, 13, 85);
+}
+
+header h1 {
+  margin: 0 0 0 50px;
+  padding: 16px 0;
+  color: aliceblue;
+  font-size: 1.6rem;
+}
+
 [menuSignIn] {
   width: 100%;
   max-width: 440px;
+  margin: auto;
   padding: 32px 28px;
   border: 1px solid rgba(137, 177, 229, 0.28);
   border-radius: 16px;
@@ -102,7 +116,12 @@ body {
 }
 
 @media (max-width: 480px) {
+  header h1 {
+    margin-left: 20px;
+  }
+
   [menuSignIn] {
+    width: calc(100% - 32px);
     padding: 26px 20px;
   }
 

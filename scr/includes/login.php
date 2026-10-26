@@ -93,12 +93,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/login.css">
+    <link rel="stylesheet" href="../estilos/login.css?v=2">
     <title>Iniciar Sesion</title>
 </head>
 <body>
 
-
+<header>
+    <h1>La mismisima pagina</h1>
+</header>
 
 <div id="MenuLogIn">
     <h1>Iniciar sesion</h1>
