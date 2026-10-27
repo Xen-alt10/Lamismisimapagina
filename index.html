@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scr/estilos/index.css">
+    <link rel="stylesheet" href="scr/estilos/index.css?v=2">
     <title>La mismísima página</title>
 </head>
 <body>
@@ -17,19 +17,25 @@
                 <br>Mas simple</h2>
         </div>
     <div>
-        <a href="includes/login.php"><button> Tengo una cuenta </button></a>
-        <a href="includes/sign.php"><button> Registrarme </button></a>
+        <a href="scr/includes/login.php"><button> Tengo una cuenta </button></a>
+        <a href="scr/includes/sign.php"><button> Registrarme </button></a>
     </div>
     </div>
 
-    <div id="objetivo">
-        <h3>¿cual es nuestro objetivo?</h3><br>
-        <p>nuestro objetivo es facilitar el apredizaje de contenidos logicos por medio de ejercicios didacticos y progresivos</p>
-    </div>
+    <section class="objetivos" aria-labelledby="titulo-objetivos">
+        <div class="objetivos-encabezado">
+            <p class="objetivos-etiqueta">Nuestra propuesta</p>
+            <h2 id="titulo-objetivos">Aprende a tu manera</h2>
+        </div>
+        <article class="objetivo">
+            <h3>¿Cuál es nuestro objetivo?</h3>
+            <p>Nuestro objetivo es facilitar el aprendizaje de contenidos lógicos mediante ejercicios didácticos y progresivos.</p>
+        </article>
 
-    <div id="objetivo">
-        <h3>¿como lo lograriamos?</h3><br>
-        <p>usted puede seleccionar lo que quiere aprender, el nivel en que esta y encontrara diferentes ejercicios basados en su selecciones</p>
-    </div>
+        <article class="objetivo">
+            <h3>¿Cómo lo lograríamos?</h3>
+            <p>Puedes elegir qué quieres aprender y tu nivel. Encontrarás ejercicios variados y adaptados a tus selecciones.</p>
+        </article>
+    </section>
 </body>
 </html>
