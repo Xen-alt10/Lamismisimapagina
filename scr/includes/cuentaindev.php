@@ -31,7 +31,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </section>
     </header>
 
-    <div id="usernamewelcome">
+    <div id="userwelcome">
         <p>Bienvenido, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></p>
     </div>
     

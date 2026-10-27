@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 body{
     color: #ffffff;
-    background-color: rgb(216, 216, 255);
+    background-color:rgb(33, 48, 66);
 }
 
 *{
@@ -15,7 +16,8 @@ body{
     left: 0;
     width: 100%;
     padding: 14px 100px;
-    background: #0a3d62;
+    background-color: rgb(9, 1, 52);
+    border-bottom: 1px solid rgb(3, 13, 85);
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -37,6 +39,16 @@ body{
     margin-left: 40px;
 }
 
-.userwelcome{
-    display: block;
+#userwelcome{
+    text-align: center;
+    max-width: 250px;
+    margin: 170px auto 0;
+    padding: 45px;
+    font-size: 20px;
+    background-color: rgb(20, 17, 37);
+    border-radius: 20px;
+}
+
+#userwelcome p{
+    margin: 0;
 }
