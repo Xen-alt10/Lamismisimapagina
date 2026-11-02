@@ -2,11 +2,27 @@
 
 // Initialize the session
 session_start();
- 
+$conexion = new mysqli("localhost", "phpmyadmin", "RedesInformaticas", "lamismisimabasededatos");
+if ($conexion ->connect_error) {
+    die ("Error de conexion: " . $conexion->connect_error);
+}
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
+}
+
+ $sql = "SELECT usuario_asocc, nivel, xp_necesaria, xp_ganada FROM xp_usuario WHERE usuario_asocc = $_SESSION[id]";
+if($stmt = mysqli_prepare($conexion, $sql)){
+    if(mysqli_stmt_execute($stmt)){
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 1){
+            mysqli_stmt_bind_result($stmt, $username, $usernivel, $userXpNecesaria, $userXpGanada);
+            $_SESSION ["usernivel"] = $usernivel;
+            $_SESSION ["userXpNecesaria"] = $userXpNecesaria;
+            $_SESSION ["userXpGanada"] = $userXpGanada;
+        }else {echo "no hay nivel asociado";}
+    }else {echo "error";}
 }
 ?>
 
@@ -33,6 +49,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <div id="userwelcome">
         <p>Bienvenido, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></p>
+    </div>
+
+    <div id="MenuXP">
+        <p>Nivel: <?php echo htmlspecialchars($_SESSION["usernivel"]); ?></p>
+        <p>XP Actual: <?php echo htmlspecialchars($_SESSION["userXpGanada"]); ?></p>
+        <p>XP Restante: <?php echo htmlspecialchars($_SESSION["userXpNecesaria"]); ?></p>
     </div>
     
     
