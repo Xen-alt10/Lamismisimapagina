@@ -12,7 +12,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 
- $sql = "SELECT usuario_asocc, nivel, xp_necesaria, xp_ganada FROM xp_usuario WHERE usuario_asocc = $_SESSION[id]";
+$sql = "SELECT usuario_asocc, nivel, xp_necesaria, xp_ganada FROM xp_usuario WHERE usuario_asocc = $_SESSION[id]";
+$result = $conexion -> query($sql);
 if($stmt = mysqli_prepare($conexion, $sql)){
     if(mysqli_stmt_execute($stmt)){
         mysqli_stmt_store_result($stmt);
