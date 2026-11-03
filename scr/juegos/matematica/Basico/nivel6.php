@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juego 1</title>
+	 <link rel="stylesheet" href="../../../estilos/lvl6.css">
+</head>         
+<body>
+	<header>
+		<h1>Lamismisimapagina</h1>
+		<a href="../../../inicio.html">volver al inicio</a>
+	</header>
+	<div id="ejercicio1"> <h2>Nivel 6 - Averiguar X</h2>
+	<p>Elegir una de estas 3 opciones como respuesta a este ejercicio</p>
+	<div id="ejercicio">
+
+	<div id="ecuacion">
+	<p>
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mrow>
+				<mfrac>
+					<mi>x</mi>
+					<mn>3</mn>
+				</mfrac>
+				<mo>-</mo>
+				<mn>4</mn>
+				<mo>=</mo>
+				<mn>-3</mn>
+			</mrow>
+		</math>
+	</p>
+	</div>
+
+	<p id="nivel-1" ></p>
+	<div id="multiple-choice" style="margin-bottom: 15px">
+		<button id="posres1" type="button" onclick="correcto() ">X = 8</button>
+		<button id="posres2" type="button" onclick="incorrecto()">X = 5</button>
+		<button id="posres3" type="button" onclick="incorrecto()">X = 3</button>
+	</div>
+    
+	<div id = "seccion-indev">
+		<button type="button" onclick="resolver1()">resolver</button>
+		<button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
+	</div>
+
+	<a href="nivel5.html"><h4 id="proximonivel"></h4></a>
+
+	</div>
+</div>
+    
+    
+	<script>
+		const posres1= document.getElementById('posres1');
+		const posres2= document.getElementById('posres2');
+		const posres3= document.getElementById('posres3');
+
+		function resolver1(){
+		document.getElementById("nivel-1").innerHTML = 'X = 4'
+
+		}
+		function incorrecto(){
+		document.getElementById("nivel-1").innerHTML = '<p style="color: red;"> RESPUESTA INCORRECTA LA PUTA QUE TE PARIO ';
+		document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
+			posres1.disabled = true;
+		   posres2.disabled = true;
+		   posres3.disabled = true;
+
+		}    
+		function correcto(){
+		   if(typeof sumarXP === 'function') sumarXP(100);
+		document.getElementById("nivel-1").innerHTML = '<p style="color: green;"> RESPUESTA CORRECTA LA PUTA QUE TE PARIO ';
+		document.getElementById("proximonivel").innerHTML = 'IR AL PROXIMO NIVEL';
+			posres1.disabled = true;
+		   posres2.disabled = true;
+		   posres3.disabled = true;
+		} 
+        
+		function indev_retry(){
+			posres1.disabled = false;
+			posres2.disabled = false;
+			posres3.disabled = false;
+			document.getElementById("proximonivel").innerHTML = '';
+		}
+	</script>    
+	<script src="../../../java/auth.js"></script>
+</body>
+</html>

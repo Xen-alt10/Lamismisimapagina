@@ -22,7 +22,7 @@ if($result->num_rows > 0){
         $xp_ganada = $fila["xp_ganada"];
     }
 }else{
-
+    $errormessage = "ERROR: No hay un registro de experiencia de este usuario";
 }
 ?>
 
@@ -39,8 +39,8 @@ if($result->num_rows > 0){
         <section id="home">
         <h1> La mismísima página </h1>
         <nav class="nav">
-            <a href="../inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
-            <a href="../recompensas.html"><i class="fa-solid fa-info-circle"></i> Recompensas</a>
+            <a href="../inicio.html"><i class="fa-solid fa-house"></i> Ejercicios</a>
+            <a href="../recompensas.html"><i class="fa-solid fa-info-circle"></i></a>
             <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> Historial de ejercicios</a>
             <a href="cuenta.php"><i class="fa-solid fa-gamepad"></i> Cuenta</a>
         </nav>
