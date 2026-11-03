@@ -14,16 +14,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 $sql = "SELECT usuario_asocc, nivel, xp_necesaria, xp_ganada FROM xp_usuario WHERE usuario_asocc = $_SESSION[id]";
 $result = $conexion -> query($sql);
-if($stmt = mysqli_prepare($conexion, $sql)){
-    if(mysqli_stmt_execute($stmt)){
-        mysqli_stmt_store_result($stmt);
-        if(mysqli_stmt_num_rows($stmt) == 1){
-            mysqli_stmt_bind_result($stmt, $username, $usernivel, $userXpNecesaria, $userXpGanada);
-            $_SESSION ["usernivel"] = $usernivel;
-            $_SESSION ["userXpNecesaria"] = $userXpNecesaria;
-            $_SESSION ["userXpGanada"] = $userXpGanada;
-        }else {echo "no hay nivel asociado";}
-    }else {echo "error";}
+if($result->num_rows > 0){
+    $fila = $result->fetch_assoc();
+    if ($fila) { 
+        $nivel = $fila["nivel"];
+        $xp_necesaria = $fila["xp_necesaria"];
+        $xp_ganada = $fila["xp_ganada"];
+    }
+}else{
+
 }
 ?>
 
@@ -53,9 +52,9 @@ if($stmt = mysqli_prepare($conexion, $sql)){
     </div>
 
     <div id="MenuXP">
-        <p>Nivel: <?php echo htmlspecialchars($_SESSION["usernivel"]); ?></p>
-        <p>XP Actual: <?php echo htmlspecialchars($_SESSION["userXpGanada"]); ?></p>
-        <p>XP Restante: <?php echo htmlspecialchars($_SESSION["userXpNecesaria"]); ?></p>
+        <p>Nivel: <?php echo htmlspecialchars($nivel); ?></p>
+        <p>XP Actual: <?php echo htmlspecialchars($xp_necesaria); ?></p>
+        <p>XP Restante: <?php echo htmlspecialchars($xp_ganada); ?></p>
     </div>
     
     
