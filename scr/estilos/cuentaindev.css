@@ -52,3 +52,29 @@ body{
 #userwelcome p{
     margin: 0;
 }
+
+#MenuXP{
+    width: min(360px, calc(100% - 40px));
+    margin: 24px auto;
+    padding: 24px;
+    background-color: rgb(20, 17, 37);
+    border-radius: 12px;
+}
+
+#MenuXP p{
+    margin: 0 0 12px;
+}
+
+.xp-barra{
+    height: 16px;
+    overflow: hidden;
+    background-color: rgb(55, 62, 78);
+    border-radius: 999px;
+}
+
+.xp-barra__progreso{
+    height: 100%;
+    background-color: #42d392;
+    border-radius: inherit;
+    transition: width 300ms ease;
+}
