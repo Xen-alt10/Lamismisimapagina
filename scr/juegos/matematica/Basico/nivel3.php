@@ -1,3 +1,9 @@
+<?php
+	$materia = "matematica";
+	$tema = "Basico";
+	$numero_nivel = 3;
+	require_once __DIR__ . "/../../../includes/nivel.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Juego 1</title>
 	 <link rel="stylesheet" href="../../../estilos/lvl3.css">
-    
-</head>         
-<body>
+	<link rel="stylesheet" href="../../../estilos/nivel-panel.css?v=2">
+</head>
+<body data-nivel="3" data-materia="matematica" data-tema="Basico">
 	<header>
 		<h1>Lamismisimapagina</h1>
-		<a href="../../../inicio.html">volver al inicio</a>
+		<a href="../../../inicio.php">volver al inicio</a>
 	</header>
 	<div id="ejercicio1">
 		<h2>Nivel 3 - Averiguar X</h2>
@@ -47,7 +53,7 @@
 		<button type="button" onclick="indev_retry()">rehabilitar botones (INDEV)</button>
 	</div>
 
-	<a href="nivel4.html"><h4 id="proximonivel"></h4></a>
+	<a href="nivel4.php"><h4 id="proximonivel"></h4></a>
 	</div>
 	</div>
 
@@ -86,5 +92,6 @@
 		}
 	</script>    
 	<script src="../../../java/auth.js"></script>
+	<?php panel_completadores(); ?>
 </body>
 </html>

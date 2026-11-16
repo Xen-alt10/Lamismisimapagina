@@ -1,0 +1,90 @@
+/* Ficha "¿Quién completó este nivel?" compartida por nivel1..6.
+   Hereda la estética de los niveles: fondo oscuro, bordes negros,
+   esquinas redondeadas y botones grises. Solo lectura: muestra
+   quién completó el nivel, con su nivel y su XP.
+
+   La ficha está OCULTA por defecto: se despliega con el botón
+   #completaron-toggle ("Ver quiénes lo completaron (n)"). */
+
+#completaron-toggle {
+    display: block !important;
+    width: min(450px, calc(100% - 32px)) !important;
+    height: 42px;
+    margin: 24px auto 0 !important;
+    padding: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(36, 35, 35);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+#completaron-toggle:hover {
+    background-color: rgb(60, 60, 60);
+    width: min(460px, calc(100% - 24px)) !important;
+}
+
+#completaron[hidden] {
+    display: none !important;
+}
+
+#completaron {
+    width: min(450px, calc(100% - 32px));
+    margin: 12px auto 40px;
+    padding: 18px;
+    background-color: rgb(17, 17, 17);
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(192, 192, 192, 0.35);
+    text-align: center;
+}
+
+#completaron h2 {
+    font-size: 26px;
+    margin: 0 0 4px;
+}
+
+.completaron__bajada {
+    font-size: 15px;
+    opacity: 0.75;
+    margin: 0 0 14px;
+}
+
+.completaron__vacio {
+    font-size: 17px;
+    color: #89b1e5;
+    margin: 8px 0;
+}
+
+.completador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(36, 35, 35);
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+.completador:last-child {
+    margin-bottom: 0;
+}
+
+.completador__nombre {
+    font-weight: bold;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.completador__dato {
+    font-size: 15px;
+    color: #89b1e5;
+    background-color: rgb(17, 17, 17);
+    border-radius: 999px;
+    padding: 3px 10px;
+}

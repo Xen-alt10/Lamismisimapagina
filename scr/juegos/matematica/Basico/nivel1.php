@@ -1,3 +1,9 @@
+<?php
+	$materia = "matematica";
+	$tema = "Basico";
+	$numero_nivel = 1;
+	require_once __DIR__ . "/../../../includes/nivel.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Juego 1</title>
 	<link rel="stylesheet" href="../../../estilos/lvl1.css">
-</head>         
-<body>
+	<link rel="stylesheet" href="../../../estilos/nivel-panel.css?v=2">
+</head>
+<body data-nivel="1" data-materia="matematica" data-tema="Basico">
 	<header>
 		<h1>Lamismisimapagina</h1>
-		<a href="../../../inicio.html">volver al inicio</a>
+		<a href="../../../inicio.php">volver al inicio</a>
 	</header>
 	<div id="pregunta">
 	   <h2>Nivel 1 - Averiguar X</h2>
@@ -31,8 +38,8 @@
 		<button type="button" onclick="resolver1()">resolver</button>
 	</div>
 
-	<a href="nivel2.html"><h4 id="proximonivel"></h4></a>
-	<a href="../../../inicio.html"><h4 id="inicio"></h4></a>
+	<a href="nivel2.php"><h4 id="proximonivel"></h4></a>
+	<a href="../../../inicio.php"><h4 id="inicio"></h4></a>
 
 	</div>
      
@@ -69,5 +76,7 @@
 			document.getElementById("seccion-indev").innerHTML = '<button type="button" onclick="resolver1()">resolver</button><button type="button" onclick="indev_retry()">retry (INDEV)</button>';
 }
 	</script>
+	<script src="../../../java/auth.js"></script>
+	<?php panel_completadores(); ?>
 </body>
 </html>
