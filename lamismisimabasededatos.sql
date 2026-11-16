@@ -66,6 +66,27 @@ CREATE TABLE `xp_usuario` (
 INSERT INTO `xp_usuario` (`xp_id`, `usuario_asocc`, `nivel`, `xp_necesaria`, `xp_ganada`) VALUES
 (1, 6, 1, 500, 0);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `progreso_nivel`
+--
+-- Registra quién completó cada nivel (alimenta misiones, recompensas y perfil)
+--
+
+CREATE TABLE `progreso_nivel` (
+  `id_progreso` int(10) NOT NULL AUTO_INCREMENT,
+  `usuario_asocc` int(10) NOT NULL,
+  `materia` varchar(50) NOT NULL DEFAULT 'matematica',
+  `tema` varchar(50) NOT NULL DEFAULT 'Basico',
+  `nivel` int(10) NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id_progreso`),
+  UNIQUE KEY `progreso_unico` (`usuario_asocc`,`materia`,`tema`,`nivel`),
+  KEY `progreso_usuario` (`usuario_asocc`),
+  CONSTRAINT `progreso_nivel_ibfk_1` FOREIGN KEY (`usuario_asocc`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Índices para tablas volcadas
 --

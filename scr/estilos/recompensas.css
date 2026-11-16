@@ -73,7 +73,7 @@ body{
 
 .bp_1 {
   height: 100%;
-  width: 65%;
+  width: var(--progreso, 65%);
   background-color: #4c90af;
   border-radius: 999px;
  
@@ -85,7 +85,7 @@ body{
     width: 0%;
   }
   to {
-    width: 65%;
+    width: var(--progreso, 65%);
   }
 }
 
@@ -195,7 +195,7 @@ body{
 .bp_3 {
   height: 100%;
   background-color: #4c90af;
-  animation: llenar 80s ease-in-out forwards;
+  animation: llenar 7s ease-in-out forwards;
 }
 
 #r4{
@@ -229,7 +229,7 @@ body{
 
 .bp_4 {
   height: 100%;
-  width: 65%;
+  width: var(--progreso, 65%);
   background-color: #4c90af;
   border-radius: 999px;
   transition: width 9s ease;
@@ -247,5 +247,52 @@ body{
 .bp_4 {
   height: 100%;
   background-color: #4c90af;
-  animation: llenar 80s ease-in-out forwards;
+  animation: llenar 7s ease-in-out forwards;
+}
+
+/* --- Tarjetas de misiones y recompensas: textos reales bajo el título --- */
+#r1 h3, #r2 h3, #r3 h3, #r4 h3 {
+  margin: 8px 0 2px;
+  font-size: 17px;
+}
+
+.barra-detalle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.estado {
+  font-weight: 700;
+}
+
+.estado-ok {
+  color: #42d392;
+}
+
+.estado-no {
+  color: #eb8f8c;
+}
+
+/* Recompensas: las bloqueadas se ven más apagadas */
+.bloqueada {
+  opacity: 0.65;
+}
+
+.desbloqueada {
+  opacity: 1;
+}
+
+/* Aviso bajo el título (invitado / datos personales) */
+.aviso-sesion {
+  margin: 0 auto 16px;
+  padding: 0 24px;
+  max-width: 320px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.aviso-sesion a {
+  color: #cfe9e9;
+  text-decoration: underline;
 }

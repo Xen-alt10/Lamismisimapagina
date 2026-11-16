@@ -45,10 +45,9 @@ $xp_progreso = min(100, ($xp_actual / $xp_meta) * 100);
         <section id="home">
         <h1> La mismísima página </h1>
         <nav class="nav">
-            <a href="../inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
-            <a href="../recompensas.html"><i class="fa-solid fa-info-circle"></i> Recompensas</a>
-            <a href="#historial de ejercicios"><i class="fa-solid fa-info-circle"></i> Historial de ejercicios</a>
-            <a href="cuenta.php"><i class="fa-solid fa-gamepad"></i> Cuenta</a>
+            <a href="../inicio.php"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="../misiones.php"><i class="fa-solid fa-list-check"></i> Misiones</a>
+            <a href="../perfil.php"><i class="fa-solid fa-user"></i> Perfil</a>
         </nav>
         </section>
     </header>
